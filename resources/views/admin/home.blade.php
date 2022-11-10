@@ -12,12 +12,9 @@
   {{-- header --}}
   <x-dashboardheader />
     {{-- slider --}}
-  {{-- <x-dashboardnav /> --}}
+  <x-dashboardnav />
   <div class="container">
-    
-
-    
-    <div class="main-panel">
+  <div class="main-panel">
 
     </div>
   </div>

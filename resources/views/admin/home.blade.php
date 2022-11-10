@@ -12,7 +12,7 @@
   {{-- header --}}
   <x-dashboardheader />
     {{-- slider --}}
-  <x-dashboardnav />
+  {{-- <x-dashboardnav /> --}}
   <div class="container">
     
 

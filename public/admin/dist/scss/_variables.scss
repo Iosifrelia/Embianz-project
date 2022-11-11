@@ -1,4 +1,12 @@
 //variables for color system//
+$colors:(
+ primary: #272727,
+ secondary:#41478a,
+ third: #191c24,
+ text: #fff,
+);
+
+
 
 $primary-collor: #272727;
 $secondar-collor:#41478a;
@@ -8,10 +16,11 @@ $text-color: #fff;
 
 //font map
 $font-weights:(
-  "regular": 300,
+  "s": 300,
   "medium": 500,
   "bold": 700,
 );
 
 
-$mobile: 800px;
+$mobile: 480px;
+$tablet: 768px;

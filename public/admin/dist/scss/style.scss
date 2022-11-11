@@ -2,6 +2,7 @@
 @import './resets';
 @import './functions';
 @import './mixins';
+@import './colors';
 
 body{
 background: $primary-collor;
@@ -122,7 +123,95 @@ header{
         }
       }
     }
-    
+    section{
+      display: flex(row);
+      position: absolute;
+      color: $text-color;
+      background: $third-collor;
+     left:23vh;
+     top: 10vh;
+     width: 100%;
+     height: 100vh;
+     padding-top: 2rem;
+      text-align: center;
 
+       
+
+      .addbutton{
+        
+        width: 3rem;
+        
+        height: 3rem;
+        border-radius: 3rem;
+        background-color: $button-collor;
+        text-align: center;
+        justify-content: center;
+        font-size: 3rem;
+        margin: auto;
+        margin-top: 2rem;
+
+        
+      }
+      .dropbtn {
+        background-color: $button-collor;
+        color: $text-color;
+        width: 3rem;
+        font-size: 3rem;
+        height: 3rem;
+        border-radius: 3rem;
+        padding: 1rem;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropdown {
+        position: absolute;
+        margin: auto;
+        margin-top: -3rem;
+        display: flex(row);
+        text-align: center;
+        
+        left: 105vh;
+        top: 7vh;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        left: -5rem;
+        top: 3.5rem;
+        background-color: $text-color;
+        min-width: 150px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        text-align: center;
+        background: $third-collor;
+      }
+      
+      .dropdown-content input {
+        color: black;
+        margin:1rem;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        .submit{
+          left:5rem;
+        }
+      }
+      
+      .dropdown-content a:hover {background-color: $secondar-collor;}
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      .dropdown:hover .dropbtn {
+        background-color: $primary-collor;
+      }
+
+    }
+    
 
 

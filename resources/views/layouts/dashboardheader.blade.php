@@ -1,12 +1,12 @@
 <header>
     <div class="logo">
-      <a href="{{('redirect')}}"><img src="" alt="logo"></a>
+      <a href="{{url('/redirect')}}"><img src="" alt="logo"></a>
     
     </div>
    
     <div class="searchbox">
     <form action="#">
-      <input class="search" type="text" placeholder="Search for product or categories">
+      <input class="search" type="text" placeholder="Search for anything else">
       <x-jet-button class="button">{{__('Search')}}</x-jet-button>
     </form>
      </div>

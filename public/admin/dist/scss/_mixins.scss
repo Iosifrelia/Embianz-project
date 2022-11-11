@@ -1,15 +1,9 @@
 //Mixin to center in flex + direction
-@mixin flexrow ($direction) {
+@mixin flexCenter ($direction) {
   display: flex;
-  justify-content: $direction;
+  justify-content: center;
   align-items: center;
-  flex-direction: row;
-}
-@mixin flexcolumn ($direction) {
-  display: flex;
-  justify-content: $direction;;
-  align-items: center;
-  flex-direction: column;
+  flex-direction: $direction;
 }
 
 //mixin to change flex direction in mobile view
@@ -19,13 +13,6 @@
   }
 }
 
-@mixin tablet {
-  @media (max-width: $tablet) {
-    @content;
-  }
-}
-
-//make transition a little bit smooth
 @mixin transition-ease {
   transition: all 0.5s ease-in-out;
 }

@@ -30,6 +30,7 @@ Route::middleware([
     })->name('dashboard');
     route::get('/redirect',[Homecontroller::class, 'redirect'])->name('redirect');
     route::get('/categories',[AdminController::class, 'categories'])->name('categories');
+    route::post('/add_category',[AdminController::class, 'add_category'])->name('add_category');
 
 });
 

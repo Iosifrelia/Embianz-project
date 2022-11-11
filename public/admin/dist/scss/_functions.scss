@@ -2,10 +2,7 @@
   @return map-get($map: $font-weights, $key: $weight-name )
 };
 
-@function set-text-color($color){
-  @if (lightness($color) >40%) {
-    @return #000;
-  }@else {
- @return #fff;
-  }
-};
+@function torem($value) {
+  $remvalue: ($value / 16) + rem; 
+  @return $remvalue;
+}
